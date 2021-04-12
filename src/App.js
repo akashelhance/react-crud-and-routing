@@ -7,15 +7,29 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  withRouter
+} from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar/>
-      <Home/>
-      <About/>
-      <Contact/>
-      <NotFound/>
+    <div className="App">
+     
+    <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+ 
+          <Route component={NotFound} />
+        </Switch>
+      
     </div>
+    </Router>
   );
 }
 
