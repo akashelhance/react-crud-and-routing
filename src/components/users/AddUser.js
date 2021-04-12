@@ -3,7 +3,7 @@ import React from 'react'
 const AddUser = () => {
     return (
         <div>
-            added
+            <h3 className="text-center py-4">Add New Users</h3>
         </div>
     )
 }

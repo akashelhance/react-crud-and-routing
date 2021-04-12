@@ -13,6 +13,7 @@ import {
   Switch,
   withRouter
 } from "react-router-dom";
+import AddUser from './components/users/AddUser';
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
     <div className="App">
      
     <Switch>
+      
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
- 
+          <Route exact path="/users/add" component={AddUser} />
           <Route component={NotFound} />
         </Switch>
       
