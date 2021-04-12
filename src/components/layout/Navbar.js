@@ -12,15 +12,15 @@ export const Navbar = () => {
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
-      <li className="nav-item active">
-        <NavLink className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/" exact>Home </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink  className="nav-link" to="/About">About</NavLink>
+        <NavLink  className="nav-link" to="/About" exact>About</NavLink>
       </li>
 
       <li className="nav-item">
-        <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+        <NavLink className="nav-link" to="/Contact" exact>Contact</NavLink>
       </li>
 
 
